@@ -28,8 +28,6 @@ public class StatementExample {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
 
 }
