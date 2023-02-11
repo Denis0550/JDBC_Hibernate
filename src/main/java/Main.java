@@ -24,7 +24,7 @@ public class Main {
     }
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/sda_db", Credentials.dbUserName, Credentials.dbUserPassword);
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/sda_db", Credentials.DB_USER_NAME, Credentials.DB_PASSWORD);
     }
 
 }
