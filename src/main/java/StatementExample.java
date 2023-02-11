@@ -10,12 +10,17 @@ public class StatementExample {
         try (final Connection connection = DBConnection.getConnection()) {
             try (Statement statement = connection.createStatement()) {
                 final ResultSet resultSet = statement.executeQuery("select * from persons");
-                while(resultSet.next()){
-                    System.out.println(resultSet.getString("personId"));
-                    System.out.println(resultSet.getString("firstName"));
-                    System.out.println(resultSet.getString("lastName"));
-                    System.out.println(resultSet.getString("address"));
-                    System.out.println(resultSet.getString("city"));
+                while (resultSet.next()) {
+                    System.out.print(resultSet.getString("personId").concat(" "));
+                    System.out.print(resultSet.getString("firstName").concat(" "));
+                    System.out.print(resultSet.getString("lastName").concat(" "));
+                    System.out.print(resultSet.getString("address").concat(" "));
+                    System.out.println(resultSet.getString("city").concat(" "));
+//                    System.out.print(resultSet.getString(1).concat(" "));
+//                    System.out.print(resultSet.getString(2).concat(" "));
+//                    System.out.print(resultSet.getString(3).concat(" "));
+//                    System.out.print(resultSet.getString(4).concat(" "));
+//                    System.out.println(resultSet.getString(5));
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
