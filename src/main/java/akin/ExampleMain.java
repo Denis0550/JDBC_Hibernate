@@ -1,5 +1,7 @@
 package akin;
 
+import database.DBConnection;
+
 import java.sql.*;
 
 public class ExampleMain {
@@ -29,11 +31,13 @@ public class ExampleMain {
     */
 
     public static void main(String[] args) {
-        try (final Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sda_db", "javaee21", "javaee21");
+
+
+        try (final Connection connection = DBConnection.getConnection();
              Statement statement = connection.createStatement()) {
 
-            statement.execute("delete from car where 1=1");
-            statement.execute("delete from advertisement where 1=1");
+            statement.execute("truncate table car");
+            statement.execute("truncate table advertisement");
 
             statement.executeUpdate("insert into car values('Toyota','RAV4',2021,'123ABC','Diesel',15000,'Black')");
             statement.executeUpdate("insert into car values('Toyota','Corolla',2022,'123DEF','Gas',20000,'White')");
