@@ -22,6 +22,8 @@
         <mapping class="homework.entity.Employee"/>
         <mapping class="embeddable.Mammal"/>
         <mapping class="embeddedid.Teacher"/>
+        <mapping class="secondarytable.BookType"/>
+        <mapping class="secondarytable.Book"/>
 
     </session-factory>
 </hibernate-configuration>

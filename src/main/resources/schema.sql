@@ -51,7 +51,7 @@ CREATE TABLE mammal
     PRIMARY KEY (id)
 );
 
-CREATE TABLE `sda_db`.`teacher`
+CREATE TABLE teacher
 (
     documentId INT         NOT NULL,
     licence    VARCHAR(45) NOT NULL,
@@ -59,3 +59,18 @@ CREATE TABLE `sda_db`.`teacher`
     lastName   VARCHAR(45) NULL,
     PRIMARY KEY (documentId, licence)
 );
+
+CREATE TABLE book
+(
+    id    int(11) NOT NULL AUTO_INCREMENT,
+    title varchar(45) DEFAULT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE book_type
+(
+    id   int(11) NOT NULL AUTO_INCREMENT,
+    type varchar(45) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
