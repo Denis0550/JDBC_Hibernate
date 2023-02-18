@@ -32,3 +32,13 @@ CREATE TABLE car
     Id                 bigint(19) NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (Id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `sda_db`.`employee`
+(
+    `id`          INT         NOT NULL AUTO_INCREMENT,
+    `personal_id` VARCHAR(11) NOT NULL,
+    `name`        VARCHAR(45) NOT NULL,
+    `surname`     VARCHAR(45) NOT NULL,
+    `salary`      INT NULL,
+    PRIMARY KEY (`id`)
+);
