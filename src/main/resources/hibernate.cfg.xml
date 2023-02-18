@@ -21,6 +21,7 @@
 
         <mapping class="homework.entity.Employee"/>
         <mapping class="embeddable.Mammal"/>
+        <mapping class="embeddedid.Teacher"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -50,3 +50,12 @@ CREATE TABLE mammal
     type VARCHAR(45) NULL,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE `sda_db`.`teacher`
+(
+    documentId INT         NOT NULL,
+    licence    VARCHAR(45) NOT NULL,
+    firstName  VARCHAR(45) NULL,
+    lastName   VARCHAR(45) NULL,
+    PRIMARY KEY (documentId, licence)
+);
