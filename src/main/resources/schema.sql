@@ -33,12 +33,20 @@ CREATE TABLE car
     PRIMARY KEY (Id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `sda_db`.`employee`
+CREATE TABLE employee
 (
-    `id`          INT         NOT NULL AUTO_INCREMENT,
-    `personal_id` VARCHAR(11) NOT NULL,
-    `name`        VARCHAR(45) NOT NULL,
-    `surname`     VARCHAR(45) NOT NULL,
-    `salary`      INT NULL,
-    PRIMARY KEY (`id`)
+    id          INT         NOT NULL AUTO_INCREMENT,
+    personal_id VARCHAR(11) NOT NULL,
+    name        VARCHAR(45) NOT NULL,
+    surname     VARCHAR(45) NOT NULL,
+    salary      INT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE mammal
+(
+    id   INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) NULL,
+    type VARCHAR(45) NULL,
+    PRIMARY KEY (id)
 );
