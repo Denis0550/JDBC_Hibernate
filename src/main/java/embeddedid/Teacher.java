@@ -19,6 +19,17 @@ public class Teacher {
     @EmbeddedId
     private TeacherId teacherId;
 
+    /*
+    * if you use @IdClass annotation your fields look like this
+    *
+    * @Id
+    * private String documentId;
+    *
+    * @Id
+    * private String license;
+    *
+    * */
+
     @Embedded
     private Person person;
 
