@@ -19,5 +19,7 @@
         <mapping class="hibernate.entity.Car"/>
         <mapping class="hibernate.entity.Advertisement"/>
 
+        <mapping class="homework.entity.Employee"/>
+
     </session-factory>
 </hibernate-configuration>
