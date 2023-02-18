@@ -90,3 +90,18 @@ CREATE TABLE students
     student_book_id INT NULL,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE orders
+(
+    id        INT NOT NULL AUTO_INCREMENT,
+    name      VARCHAR(45) NULL,
+    orderDate DATETIME NULL,
+    price     DECIMAL(19, 0) NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE clients_orders
+(
+    clients_id INT NULL,
+    orders_id  INT NULL
+);

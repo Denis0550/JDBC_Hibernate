@@ -28,6 +28,7 @@ public class Student {
     private Date birthDate;
 
     @OneToOne
+    @JoinColumn(name = "student_book_id")
     private StudentBook studentBook;
 
 }
