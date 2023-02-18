@@ -24,6 +24,8 @@
         <mapping class="embeddedid.Teacher"/>
         <mapping class="secondarytable.BookType"/>
         <mapping class="secondarytable.Book"/>
+        <mapping class="relations.onetoone.StudentBook"/>
+        <mapping class="relations.onetoone.Student"/>
 
     </session-factory>
 </hibernate-configuration>

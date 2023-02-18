@@ -74,3 +74,19 @@ CREATE TABLE book_type
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+CREATE TABLE student_books
+(
+    id     INT NOT NULL AUTO_INCREMENT,
+    number VARCHAR(45) NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE students
+(
+    id              INT NOT NULL AUTO_INCREMENT,
+    first_name      VARCHAR(45) NULL,
+    last_name       VARCHAR(45) NULL,
+    birth_date      DATETIME NULL,
+    student_book_id INT NULL,
+    PRIMARY KEY (id)
+);
