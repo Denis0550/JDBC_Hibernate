@@ -22,7 +22,7 @@
         <!-- use it carefully!!! -->
         <!-- use it carefully!!! -->
         <!-- use it carefully!!! -->
-        <property name="hbm2ddl.auto">update</property>
+        <!-- property name="hbm2ddl.auto">update</property -->
 
         <mapping class="hibernate.entity.Car"/>
         <mapping class="hibernate.entity.Advertisement"/>
