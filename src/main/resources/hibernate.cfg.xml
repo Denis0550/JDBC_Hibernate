@@ -16,6 +16,14 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
+        <!-- use it carefully!!! -->
+        <!-- use it carefully!!! -->
+        <!-- use it carefully!!! -->
+        <!-- use it carefully!!! -->
+        <!-- use it carefully!!! -->
+        <!-- use it carefully!!! -->
+        <!-- property name="hbm2ddl.auto">create-drop</property -->
+
         <mapping class="hibernate.entity.Car"/>
         <mapping class="hibernate.entity.Advertisement"/>
 
