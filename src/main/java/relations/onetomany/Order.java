@@ -10,7 +10,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity(name = "orders")
+@Entity(name = "orders")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +20,5 @@ public class Order {
     private String name;
     private Date orderDate;
     private float price;
-
 
 }

@@ -27,5 +27,8 @@
         <mapping class="relations.onetoone.StudentBook"/>
         <mapping class="relations.onetoone.Student"/>
 
+        <mapping class="relations.onetomany.Client"/>
+        <mapping class="relations.onetomany.Order"/>
+
     </session-factory>
 </hibernate-configuration>
