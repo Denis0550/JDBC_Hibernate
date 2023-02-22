@@ -1,0 +1,48 @@
+Index: src/main/resources/hibernate.cfg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE hibernate-configuration PUBLIC\r\n        \"-//Hibernate/Hibernate Configuration DTD 3.0//EN\"\r\n        \"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd\">\r\n\r\n<hibernate-configuration>\r\n\r\n    <session-factory>\r\n\r\n        <property name=\"connection.driver_class\">com.mysql.cj.jdbc.Driver</property>\r\n        <property name=\"connection.url\">jdbc:mysql://localhost:3306/sda_db</property>\r\n        <property name=\"dialect\">org.hibernate.dialect.MySQL8Dialect</property>\r\n        <property name=\"connection.username\">javaee21</property>\r\n        <property name=\"connection.password\">javaee21</property>\r\n\r\n        <property name=\"connection.pool_size\">3</property>\r\n        <property name=\"show_sql\">true</property>\r\n        <property name=\"format_sql\">true</property>\r\n\r\n        <!-- use it carefully!!! -->\r\n        <!-- use it carefully!!! -->\r\n        <!-- use it carefully!!! -->\r\n        <!-- use it carefully!!! -->\r\n        <!-- use it carefully!!! -->\r\n        <!-- use it carefully!!! -->\r\n        <!-- property name=\"hbm2ddl.auto\">create-drop</property -->\r\n\r\n        <mapping class=\"hibernate.entity.Car\"/>\r\n        <mapping class=\"hibernate.entity.Advertisement\"/>\r\n\r\n        <mapping class=\"homework.entity.Employee\"/>\r\n        <mapping class=\"embeddable.Mammal\"/>\r\n        <mapping class=\"embeddedid.Teacher\"/>\r\n        <mapping class=\"secondarytable.BookType\"/>\r\n        <mapping class=\"secondarytable.Book\"/>\r\n        <mapping class=\"relations.onetoone.StudentBook\"/>\r\n        <mapping class=\"relations.onetoone.Student\"/>\r\n\r\n        <mapping class=\"relations.onetomany.Client\"/>\r\n        <mapping class=\"relations.onetomany.Order\"/>\r\n\r\n    </session-factory>\r\n</hibernate-configuration>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/hibernate.cfg.xml b/src/main/resources/hibernate.cfg.xml
+--- a/src/main/resources/hibernate.cfg.xml	(revision 8b9e3caf98e44ca0c304fe4a1ea76dcf0dff1461)
++++ b/src/main/resources/hibernate.cfg.xml	(date 1676799966880)
+@@ -9,8 +9,8 @@
+         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+         <property name="connection.url">jdbc:mysql://localhost:3306/sda_db</property>
+         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+-        <property name="connection.username">javaee21</property>
+-        <property name="connection.password">javaee21</property>
++        <property name="connection.username">root</property>
++        <property name="connection.password">114488</property>
+ 
+         <property name="connection.pool_size">3</property>
+         <property name="show_sql">true</property>
+@@ -26,6 +26,7 @@
+ 
+         <mapping class="hibernate.entity.Car"/>
+         <mapping class="hibernate.entity.Advertisement"/>
++        <mapping class="denis.hibernate.entity.Employee"/>
+ 
+         <mapping class="homework.entity.Employee"/>
+         <mapping class="embeddable.Mammal"/>
+Index: src/main/java/database/Credentials.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package database;\r\n\r\npublic class Credentials {\r\n    public static final String DB_USER_NAME = \"javaee21\";\r\n    public static final String DB_PASSWORD = \"javaee21\";\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/database/Credentials.java b/src/main/java/database/Credentials.java
+--- a/src/main/java/database/Credentials.java	(revision 8b9e3caf98e44ca0c304fe4a1ea76dcf0dff1461)
++++ b/src/main/java/database/Credentials.java	(date 1676799966891)
+@@ -1,6 +1,6 @@
+ package database;
+ 
+ public class Credentials {
+-    public static final String DB_USER_NAME = "javaee21";
+-    public static final String DB_PASSWORD = "javaee21";
++    public static final String DB_USER_NAME = "root";
++    public static final String DB_PASSWORD = "114488";
+ }
